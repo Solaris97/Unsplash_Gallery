@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 전역 폰트 적용 */
+@font-face {
+  font-family: "AppleSDGothic";
+  src: url("./assets/font/AppleSDGothic.ttf");
+}

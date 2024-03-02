@@ -1,0 +1,32 @@
+{
+  // compilerOptions: 어떻게 컴파일 할 것인지.
+  "compilerOptions": {
+    "outDir": "./dist", // 컴파일 시 어떤 경로에 결과물 위치시킬지 결정
+    "target": "ES5", // 어떤 자바스크립트 코드로 컴파일 할 지
+    "strict": true, // 기본으로 활성화, 타입 체킹 담당
+    "module": "commonjs", // import문 컴파일 시 해석방법(cjs)
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // 컴파일 과정에서 사용되는 라이브러리 지정(DOM === window, document 와 같은 dom API 접근)
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // ESNext는 젤 최신거
+    "skipLibCheck": true, // 프로젝트에 사용된 라이브러리들 타입체킹 스킵 (컴파일 시간 감소)
+    "jsx": "react-jsx", // tsx로 작성된 파일을 어떻게 컴파일 할 지 ex) React.createElement, _jsx('div',(),void 0)
+    "allowJs": true, // .js파일 .ts파일에서 import가능하게
+    "baseUrl": "./src", // 절대경로 파일을 import 할 때 사용하는 속성
+    "paths": {
+      "@/*": ["/*"],
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@list/*": ["recoil/list/*"],
+      "@router/*": ["router/*"],
+      "@services/*": ["services/*"],
+      "@types/*": ["types/*"],
+      "@utils/*": ["utils/*"],
+      "@icon/*": ["assets/icon*"],
+      "@img/*": ["assets/img*"]
+    } //절대경로 설정
+  },
+  "exclude": ["node_modules"], // 다른 위치의 tsconfig.json 파일의 설정을 가져와 쓸 수 있게 하는 속성.
+  "include": ["**/*.ts", "**/*.tsx"] // include 속성은 프로젝트에서 컴파일할 파일들을 지정.
+}

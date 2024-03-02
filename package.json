@@ -1,0 +1,42 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production",
+    "start": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "recoil": "^0.7.7",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "ts-loader": "^9.5.1",
+    "webpack-env": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.17",
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "postcss": "^8.4.35",
+    "postcss-loader": "^8.1.0",
+    "style-loader": "^3.3.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.1"
+  }
+}
